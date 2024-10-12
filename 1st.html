@@ -6,47 +6,27 @@
     <title>Js💻</title>
 </head>
 <body bgcolor="yellow">
-    <p>Click on the button bellow to find the greeting for your time.</p>
+    <p>Click on the button bellow to find a random number depending on you time.</p>
     <button onclick ="myfunction()">Try me please🥺</button>      
     <p id="hour"></p>
     <p id="greet"></p>
     <script>
         function myfunction(){
-            var greeting;
+            var number;
             var time = new Date().getHours();
 
             if (time < 10){
-                greeting ="Greeting=Good morning";
+                number ="number=12";
             }
             else if (time < 20){
-                greeting = "Greeting=Good day";
+                number = "number=23";
             }
             else {
-                greeting = "Greeting=Good evening";
+                number = "number=76";
             }
             document.getElementById("hour").innerHTML = "current hour is : " + time;
-            document.getElementById("greet").innerHTML = greeting;
-        }
-    </script>   
-    <h1 class="H1">Java script properties</h1>
-    <script>
-        var k = 7;
-        var l = 4;
-        var m = null;
-        var n;
-        {
-            let l = 14;
-            const k = 7;
-        } 
-        document.write("k and l are equal : " + (k==l));
-        document.write("<br>");
-        document.write("The value of m is : " + m);
-        document.write("<br>");
-        document.write("The value of n is : " + n);
-        document.write("<br>");
-        document.write("The value of k is : " + k);
-        document.write("<br>");
-        document.write("The value of l is : " + l);
-       </script>         
-</body>
+            document.getElementById("greet").innerHTML = number;
+        }  
+        </script>
+     </body>
 </html>
